@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #016f32;
+        
+        background-size: cover;
+        font-weight: bold;
+        color: white;
+        
+        }
+     h1{
+        color: goldenrod;
+    }
+    button{
+        margin: 2px;
+        padding: 5px;
+        width: 150px;
+        color: #016f32;
+        background: goldenrod;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 2px;
+        border: none;    
+    }
+    #message-el{
+        font-style: italic;
+    }
+    #sp{
+        font-size: medium;
+        margin-left: 3px;
+    }
+    #hints{
+        color: rgb(167, 9, 9);
+    }
+    </style>
+</head>
+
+<body>
+    <h1>BlackJack<span id="sp">Card Game</span></h1>
+    
+    <p id="message-el">"Want to play a round?"</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el" >Sum:</p>
+    <button id="Start" onclick="startGame()">Start Game</button>
+    <button id="new-card" onclick="newCard()">New Card</button>
+<p id="player-el"></p>
+<p id="hints">
+    About Game: <br><br> If you got sum of cards equals 21 <br>
+    You gonna win 
+    <br>
+    If you got more than 21 you will be out
+</p>
+    <script src="jack.js"></script>
+</body>
+</html>
